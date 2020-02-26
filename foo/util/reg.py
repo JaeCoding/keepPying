@@ -1,6 +1,6 @@
 
 
-url = "https://chat.jd.com/index.action?source=open_web&nonce=de20999568614095aaa968c87aecba89&token=MDUzZDA2NDczNWNlZjI1ODQxOGQ0Y2RhOTMyNTZiNTkzMTdkYzM0ZTgwMGQ1ZmYyYTBjZWU1YTI5Y2M3MmY4Y2ZlYmQzNjA0MzgyZjIyMGEwYzQwMjE3ZjY0YzYwMDNjNjQ3ZTg4ZTUyYWM2NTZmOWFiOTdjY2U0MDhiNTBlODdiMzhlYzg1YjE5N2UzYmI4ZjkwNzA0NjE2N2Q1YWU1OWQ2Mjk5NTFmNTlmYTY3NTkxYWM3YjlkNmJjMGExODE2&waiterAppId=open.1e7f4bd0a0eea6a530d00100e0.waiter&aspId=4294993272.1.3.0.1077.2&userApp=open.1e7f4bd0a0eea6a530d00100e0.customer&mallId=4294993272"
+url = "chat.jd.com/index.action?source=open_web&aspid=4294991939.1.1.1.220.2&mallId=4294991939&userApp=open.12ff4bd0a0a7998265400100d9.customer&waiterAppId=open.12ff4bd0a0a7998265400100d9.waiter&entry=bR0wY2Zmeuk7MkLhlSFK"
 
 format = url.replace('&', '\n').replace('?', '\n').replace('=', ' = ')
 

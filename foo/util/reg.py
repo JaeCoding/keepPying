@@ -5,3 +5,6 @@ url = "https://dd1-open.jd.com/chat/m/index?source=open_web&token=MDUzZDA2NDczNW
 format = url.replace('&', '\n').replace('?', '\n').replace('=', ' = ')
 
 print(format)
+
+
+text = ''

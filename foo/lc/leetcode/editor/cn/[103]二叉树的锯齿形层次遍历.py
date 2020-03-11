@@ -35,35 +35,48 @@
 from typing import List
 
 from foo.lc.TreeNode import TreeNode
+from foo.lc.TreeUtil import TreeUtil
 
+
+# Z字打印，关键在于使用了一个栈，以及使用了一个flag表示添加左右子树的顺序
 
 class Solution:
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
         if not root:
-            return [[]]
+            return []
         result = []
-        stack = []
+        stack: List[TreeNode] = []
         stack.append(root)
+        result.append([root.val])
         direct = 'right'
         while stack:
             next_stack = []
+            next_print = []
             for i in range(0, len(stack)):
                 node = stack.pop()
                 if direct == 'right':
                     if node.right:
                         next_stack.append(node.right)
+                        next_print.append(node.right.val)
                     if node.left:
                         next_stack.append(node.left)
+                        next_print.append(node.left.val)
                 elif direct == 'left':
+                    if node.left:
+                        next_stack.append(node.left)
+                        next_print.append(node.left.val)
                     if node.right:
                         next_stack.append(node.right)
-                    if node.left:
-                        next_stack.append(node.left)
-            result.append(next_stack)
+                        next_print.append(node.right.val)
+            if next_print:
+                result.append(next_print)
             stack = next_stack
             direct = 'left' if(direct == 'right') else 'right'
         return result
 # leetcode submit region end(Prohibit modification and deletion)
 
+t = TreeUtil().creat_tree([1,2,3,4,'null','null',5])
 
-a = Solution().zigzagLevelOrder()
+a = Solution().zigzagLevelOrder(t)
+
+print(a)

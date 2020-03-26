@@ -47,6 +47,24 @@ class Solution:
 
         return max(dp)
 
+    def lengthOfLIS(self, nums: List[int]) -> int:
+
+        # consider if i could be put in the tail of j ( j from 0 to i-1)
+        # if so, dp[i] could be dp[j]+1;  if not, dp[i] could be dp[j], and we choice the max dp[i]
+
+        if not nums:
+            return 0
+        # min value is 1
+        dp = [1] * len(nums)
+
+        for i in range(0, len(nums)):
+            for j in range(0, i):
+                if nums[i] > nums[j]:
+                    dp[i] = max(dp[i], dp[j] + 1)
+
+        return max(dp)
+
+
 
 
         

@@ -4,6 +4,7 @@ from foo.lc.TreeNode import TreeNode
 
 
 class TreeUtil:
+    @classmethod
     def creat_tree(self, input: List[str]) -> TreeNode:
 
         queue: List[TreeNode] = []

@@ -68,12 +68,15 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
+from typing import List
+
+
 class Solution:
     def numRookCaptures(self, board: List[List[str]]) -> int:
         count = 0
         for i in range(0, len(board)):
             for j in range(0, len(board[0])):
-                if  board[i][j] == 'R':
+                if board[i][j] == 'R':
                     # 上 下 左 右
                     for m in range(i-1, -1, -1):
                         if board[m][j] != '.':
@@ -91,7 +94,7 @@ class Solution:
                         if board[i][m] != '.':
                             count += 1 if board[i][m] == 'p' else 0
                             break
-                return count
+                    return count
 
 
 a = Solution().numRookCaptures([[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".","R",".",".",".","p"],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."]])

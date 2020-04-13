@@ -46,40 +46,65 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
+import collections
+import datetime
+import time
+from typing import List
+import heapq
+
 class Twitter:
 
     def __init__(self):
         """
         Initialize your data structure here.
         """
-        self.followers = dict()
-        self.twitters = dict()
+        self.followers = collections.defaultdict(set)
+        self.twitters = collections.defaultdict(list)
         
 
     def postTweet(self, userId: int, tweetId: int) -> None:
         """
         Compose a new tweet.
         """
-        self.twitters[]
-        
+        if len(self.twitters[userId]) == 10:
+            self.twitters[userId].remove(0)
+        self.twitters[userId].append((tweetId, datetime.datetime.now()))
+
+    def cmp(self, a, b):
+
 
     def getNewsFeed(self, userId: int) -> List[int]:
+
         """
         Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
         """
+        heap = []
+        return None
         
 
     def follow(self, followerId: int, followeeId: int) -> None:
         """
         Follower follows a followee. If the operation is invalid, it should be a no-op.
         """
+        self.followers[followerId].add(followeeId)
         
 
     def unfollow(self, followerId: int, followeeId: int) -> None:
         """
         Follower unfollows a followee. If the operation is invalid, it should be a no-op.
         """
-        
+        self.followers[followerId].remove(followeeId)
+
+
+
+a = collections.defaultdict(list)
+a[1].append(3)
+a[1].append(3)
+print(a[1])
+a = datetime.datetime.now()
+time.sleep(1)
+b = datetime.datetime.now()
+print(a < b)
 
 
 # Your Twitter object will be instantiated and called as such:

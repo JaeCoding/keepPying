@@ -139,6 +139,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[1391]检查网格中是否存在有效路径.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[1391]检查网格中是否存在有效路径.py" />
+              <option name="questionId" value="1507" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[141]环形链表.py">
           <value>
             <LeetcodeEditor>
@@ -160,6 +168,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[143]重排链表.py" />
               <option name="questionId" value="143" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[151]翻转字符串里的单词.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[151]翻转字符串里的单词.py" />
+              <option name="questionId" value="151" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -291,6 +307,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[460]LFU缓存.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[460]LFU缓存.py" />
+              <option name="questionId" value="460" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[543]二叉树的直径.py">
           <value>
             <LeetcodeEditor>
@@ -392,6 +416,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[876]链表的中间结点.py" />
               <option name="questionId" value="908" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[887]鸡蛋掉落.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[887]鸡蛋掉落.py" />
+              <option name="questionId" value="923" />
             </LeetcodeEditor>
           </value>
         </entry>

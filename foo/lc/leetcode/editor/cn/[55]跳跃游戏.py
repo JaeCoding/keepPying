@@ -38,8 +38,10 @@ class Solution:
 
         position = 0
         while position < len(nums)-1:
+            # 能跳出去 不用考虑了 否则后面会越界
             if position + nums[position] >= len(nums)-1:
                 return True
+            # 当前为0
             if nums[position] == 0:
                 return False
 
@@ -54,4 +56,4 @@ class Solution:
 
 # leetcode submit region end(Prohibit modification and deletion)
 
-a = Solution().canJump([2,5,0,0])
+a = Solution().canJump2([2,5,0,0])

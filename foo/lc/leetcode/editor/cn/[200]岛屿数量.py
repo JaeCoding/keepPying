@@ -40,18 +40,31 @@ class Solution:
         for i in range(len(grid)):
             for j in range(len(grid[0])):
 
-                if grid[i][j] == 1:
+                if grid[i][j] == '1':
                     count += 1
-                    grid[i][j] = -1
+                    grid[i][j] = '-1'
                     stack = [(i, j)]
                     while stack:
                         (now_i, now_j) = stack.pop()
                         for (plus_i, plus_j) in next_list:
                             next_i = now_i + plus_i
-                            next_j = now_i + plus_i
-                            if 0 <= now_i + next_i < len(grid) and 0 <= now_j + next_j < len(grid) and
+                            next_j = now_j + plus_j
+                            if 0 <= next_i < len(grid) and 0 <= next_j < len(grid[0]) and grid[next_i][next_j] == '1':
+                                stack.append((next_i, next_j))
+                                grid[next_i][next_j] = '-1'
+        return count
 
 
+# a = Solution().numIslands([["1","1","1","1","0"],
+#                            ["1","1","0","1","0"],
+#                            ["1","1","0","0","0"],
+#                            ["0","0","0","0","0"]])
+
+a = Solution().numIslands([["1","1","0","0","0"],
+                           ["1","1","0","0","0"],
+                           ["0","0","1","0","0"],
+                           ["0","0","0","1","1"]])
+print(a)
 
 
 

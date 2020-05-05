@@ -147,6 +147,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[137]只出现一次的数字 II.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[137]只出现一次的数字 II.py" />
+              <option name="questionId" value="137" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[1391]检查网格中是否存在有效路径.py">
           <value>
             <LeetcodeEditor>
@@ -379,6 +387,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[45]跳跃游戏 II.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[45]跳跃游戏 II.py" />
+              <option name="questionId" value="45" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[460]LFU缓存.py">
           <value>
             <LeetcodeEditor>
@@ -392,6 +408,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[466]统计重复个数.py" />
               <option name="questionId" value="466" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[53]最大子序和.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[53]最大子序和.py" />
+              <option name="questionId" value="53" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -576,6 +600,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[95]不同的二叉搜索树 II.py" />
               <option name="questionId" value="95" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[98]验证二叉搜索树.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[98]验证二叉搜索树.py" />
+              <option name="questionId" value="98" />
             </LeetcodeEditor>
           </value>
         </entry>

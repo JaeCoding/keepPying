@@ -13,5 +13,13 @@ class ListUtil:
             cur = cur.next
         return dummy.next
 
+    def printListNode(self, root: ListNode):
+        out = []
+        while root:
+            out.append(root.val)
+            root = root.next
+        print(out)
+
+
 
 a = ListUtil().creat_tree([1, 2, 3])

@@ -4,7 +4,6 @@ Solution.__main__()
 
 
 
-print(c)
 
 
 

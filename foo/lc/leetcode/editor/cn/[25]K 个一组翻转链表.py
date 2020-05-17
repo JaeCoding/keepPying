@@ -52,16 +52,21 @@ class Solution:
         next = cur.next
         # 开始翻转k个，其实只要摘出k-1个,放到前部，所以大于1就好
         while k > 1:
-           cur.next = next.next  # 将next摘出来
-           next.next = pre.next  # 将next指向头部的后面
-           pre.next = next  # 将头部指向插入的节点
-           next = cur.next  # 下一待摘出节点
-           k -= 1
+            cur.next = next.next  # 将next摘出来
+            next.next = pre.next  # 将next指向头部的后面
+            pre.next = next  # 将头部指向插入的节点
+            next = cur.next  # 下一待摘出节点
+            k -= 1
 
         return cur  # 把最后一个元素返回，用于下一轮的前驱（dummy）
 
-
     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
+        """
+        reverse K Group
+        :param head: head
+        :param k:
+        :return:
+        """
         dummy = ListNode(-1)
         dummy.next = head
         end = dummy
@@ -70,10 +75,8 @@ class Solution:
             end = self.reverseK(end, k)
         return dummy.next
 
-
-
-head = ListUtil().creat_tree([1,2,3,4,5,6,7])
-a = Solution().reverseKGroup(head, 3)
-print(a)
+# head = ListUtil().creat_tree([1,2,3,4,5,6,7])
+# a = Solution().reverseKGroup(head, 3)
+# print(a)
 
 # leetcode submit region end(Prohibit modification and deletion)

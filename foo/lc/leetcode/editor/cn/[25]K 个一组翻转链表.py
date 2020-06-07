@@ -46,7 +46,8 @@ class Solution:
             end = end.next
             if not end:
                 return None  # 返回个空，提示外部调用，已经结束
-        # 开始翻转，记录三个指针
+        # 开始翻转，记录三个
+        # 指针
         pre = head
         cur = pre.next
         next = cur.next

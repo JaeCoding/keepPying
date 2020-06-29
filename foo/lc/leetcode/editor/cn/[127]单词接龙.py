@@ -59,7 +59,7 @@ from typing import List
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
 
-        # 通过建立单词之间的关系图，可以转化图的最短路问题
+        # 通过建立单词之间的关系图，可以转化图的最短路问1题
         step = 1
         all = set(wordList)
         if beginWord in all:

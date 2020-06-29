@@ -19,25 +19,23 @@
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
-        l = max(len(a), len(a))
+        l = max(len(a), len(b))
         plus = 0
         result = ""
         for i in range(0, l):
-            i_a = a.index(len(a) - 1 - i) if(i < len(a)) else 0
-            i_b = b.index(len(b) - 1 - i) if(i < len(b)) else 0
-            sum: int = i_a + i_b + plus
-            if sum > 1:
-                plus = 1
-                result = (sum - 2) + result
-            else:
-                plus = 0
-                result = sum + result
+            i_a = int(a[len(a) - 1 - i]) if(i < len(a)) else 0
+            i_b = int(b[len(b) - 1 - i]) if(i < len(b)) else 0
+            remain = (i_a + i_b + plus) % 2
+            plus = (i_a + i_b + plus) // 2
+            result = str(remain) + result
 
-
-
-        return result
+        return str(plus) + result if plus == 1 else result
 
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-a = Solution().addBinary("1010",)
+# a = Solution().addBinary("1010","1011")
+# a = Solution().addBinary("11","1")
+# a = Solution().addBinary("0","0")
+a = Solution().addBinary("1010","101010101011011")
+print(a)

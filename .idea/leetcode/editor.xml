@@ -355,6 +355,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[215]数组中的第K个最大元素.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[215]数组中的第K个最大元素.py" />
+              <option name="questionId" value="215" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[21]合并两个有序链表.py">
           <value>
             <LeetcodeEditor>
@@ -792,6 +800,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[面试题 17.16]按摩师.py" />
               <option name="questionId" value="1000023" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[面试题09]用两个栈实现队列.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[面试题09]用两个栈实现队列.py" />
+              <option name="questionId" value="100273" />
             </LeetcodeEditor>
           </value>
         </entry>

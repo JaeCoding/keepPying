@@ -451,6 +451,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[378]有序矩阵中第K小的元素.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[378]有序矩阵中第K小的元素.py" />
+              <option name="questionId" value="378" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[394]字符串解码.py">
           <value>
             <LeetcodeEditor>
@@ -600,6 +608,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[69]x 的平方根.py" />
               <option name="questionId" value="69" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[718]最长重复子数组.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[718]最长重复子数组.py" />
+              <option name="questionId" value="718" />
             </LeetcodeEditor>
           </value>
         </entry>

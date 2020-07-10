@@ -15,7 +15,7 @@
 # ],
 # k = 8,
 # 
-# return 13.
+# r7eturn 13.
 #  
 #  
 # 
@@ -24,7 +24,38 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
+from typing import List
+
+
 class Solution:
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
-        
+        n = len(matrix)
+        reduce = 1
+        left = True
+        l = []
+        while True:
+
+            if k - reduce <= 0:
+                # k will in the this diagonal
+                if left:
+                    for i in range(reduce):
+                        l.append(matrix[i][reduce - 1 - i])
+                else:
+                    for i in range(reduce):
+                        l.append(matrix[n - reduce + i][n - 1 - i])
+                l.sort()
+                return l[k - 1]
+
+            k -= reduce
+            if reduce < n:
+                reduce += 1
+            else:
+                reduce -= 1
+                left = False
+
+
+
+a = Solution().kthSmallest([[1, 5, 9], [10, 11, 13], [12, 13, 15]], 8)
+a = Solution().kthSmallest([[1,3,5],[6,7,12],[11,14,14]],3)
+print(a)
 # leetcode submit region end(Prohibit modification and deletion)

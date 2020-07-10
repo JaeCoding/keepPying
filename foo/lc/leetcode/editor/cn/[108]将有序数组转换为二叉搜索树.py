@@ -54,7 +54,27 @@ class Solution:
 
         return recur(0, len(nums))
 
+    def sortedArrayToBST2(self, nums: List[int]) -> TreeNode:
+
+        def recur(left: int, right: int):
+            if left == right:
+                return None
+
+            mid = (left + right) // 2
+            node = TreeNode(nums[mid])
+            node.left = recur(left, mid)
+            node.right = recur(mid + 1, right)
+            return node
+
+        a = recur(0, len(nums))
+        return a
+
+
+
+
 
 # leetcode submit region end(Prohibit modification and deletion)
 
-Solution().sortedArrayToBST([0, 1, 2, 3, 4, 5])
+# Solution().sortedArrayToBST([0, 1, 2, 3, 4, 5])
+a = Solution().sortedArrayToBST2([-10,-3,0,5,9])
+print(a)

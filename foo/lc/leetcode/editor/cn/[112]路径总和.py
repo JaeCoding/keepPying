@@ -30,6 +30,7 @@
 #         self.left = None
 #         self.right = None
 from foo.lc.TreeNode import TreeNode
+from foo.lc.TreeUtil import TreeUtil
 
 
 class Solution:
@@ -54,5 +55,7 @@ class Solution:
 
 
 
-        
+root = TreeUtil.creat_tree([5,4,8,11,'null',13,4,7,2,'null','null','null',1])
+a = Solution().hasPathSum(root, 22)
+print(a)
 # leetcode submit region end(Prohibit modification and deletion)

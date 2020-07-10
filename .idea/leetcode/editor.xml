@@ -419,6 +419,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[309]Best Time to Buy and Sell Stock with Cooldown.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[309]Best Time to Buy and Sell Stock with Cooldown.py" />
+              <option name="questionId" value="309" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[33]搜索旋转排序数组.py">
           <value>
             <LeetcodeEditor>
@@ -584,6 +592,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[5]最长回文子串.py" />
               <option name="questionId" value="5" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[63]不同路径 II.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[63]不同路径 II.py" />
+              <option name="questionId" value="63" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -808,6 +824,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[面试题 01.06]字符串压缩.py" />
               <option name="questionId" value="100161" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[面试题 16.11]跳水板.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[面试题 16.11]跳水板.py" />
+              <option name="questionId" value="100352" />
             </LeetcodeEditor>
           </value>
         </entry>

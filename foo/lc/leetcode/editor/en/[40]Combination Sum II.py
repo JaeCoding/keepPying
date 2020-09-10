@@ -28,13 +28,16 @@
 # 
 #  
 # Input: candidates = [2,5,2,1,2], target = 5,
+#  1, 2, 2, 2, 5
+
 # A solution set is:
 # [
 #   [1,2,2],
 #   [5]
 # ]
 #  
-#  Related Topics 数组 回溯算法
+#  Related Topics 数组 回溯算法 
+#  👍 391 👎 0
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
@@ -43,35 +46,25 @@ from typing import List
 
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
-
         candidates.sort()
-        out = []
         result = []
-        # has: set = set()
-        def backtrace(target_now, cur):
+        out = []
+        def back_trace(target_now: int, index_now: int):
             if target_now == 0:
                 result.append(out.copy())
             else:
-                for i in range(cur, len(candidates)):
-                    # 如果i比入口位置大，且i与上一个位置元素相同
-                    # 比如在[1,2,2,2,5],5迭代到[1,2,2]添加一个结果，然后返回pop成[1,2]时，cur是2，i是3,
-                    # 然后发现 i > cur and i位置与上一个相同，那么就没必要再算一次[1,2,2]了
-                    if i > cur and candidates[i] == candidates[i - 1]:
-                        continue
-                    if candidates[i] > target_now:
+                for i in range(index_now, len(candidates)):
+                    if target_now - candidates[i] < 0:
                         break
-
+                    # find the same, choose the last one
+                    if i > index_now and candidates[i] == candidates[i - 1]:
+                        continue
                     out.append(candidates[i])
-                    # has.add(i)
-                    backtrace(target_now - candidates[i], i+1)
+                    back_trace(target_now - candidates[i], i + 1)
                     out.pop()
-                    # has.remove(i)
-        backtrace(target, 0)
+        back_trace(target, 0)
         return result
-
-
-
-# leetcode submit region end(Prohibit modification and deletion)
 
 a = Solution().combinationSum2([2,5,2,1,2], 5)
 print(a)
+# leetcode submit region end(Prohibit modification and deletion)

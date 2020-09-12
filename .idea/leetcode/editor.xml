@@ -27,6 +27,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[216]Combination Sum III.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[216]Combination Sum III.py" />
+              <option name="questionId" value="216" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[329]矩阵中的最长递增路径.py">
           <value>
             <LeetcodeEditor>
@@ -72,6 +80,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[632]最小区间.py" />
               <option name="questionId" value="632" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[637]Average of Levels in Binary Tree.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[637]Average of Levels in Binary Tree.py" />
+              <option name="questionId" value="637" />
             </LeetcodeEditor>
           </value>
         </entry>

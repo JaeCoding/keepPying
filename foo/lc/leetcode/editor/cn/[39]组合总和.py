@@ -66,6 +66,25 @@ class Solution:
         return result
 
 
-a = Solution().combinationSum([2, 3, 5], 8)
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+        candidates.sort()
+        result = []
+        now = []
+        def back_trace(target_now: int, index_now: int):
+            if target_now == 0:
+                result.append(now.copy())
+            else:
+                for i in range(index_now, len(candidates)):
+                    # cut branch
+                    if target_now - candidates[i] < 0:
+                        return
+                    now.append(candidates[i])
+                    back_trace(target_now - candidates[i], i)
+                    now.pop()
+        back_trace(target, 0)
+        return result
+
+
+a = Solution().combinationSum2([2, 3, 5], 8)
 
 # leetcode submit region end(Prohibit modification and deletion)

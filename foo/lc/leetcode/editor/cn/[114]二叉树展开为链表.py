@@ -47,6 +47,7 @@ class Solution:
         """
         if not root:
             return
+        # 准备一个list
         l: List[TreeNode] = []
 
         def dfs(node: TreeNode):

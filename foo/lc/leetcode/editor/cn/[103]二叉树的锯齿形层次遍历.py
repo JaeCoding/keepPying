@@ -34,8 +34,8 @@
 #         self.right = None
 from typing import List
 
-from foo.lc.TreeNode import TreeNode
-from foo.lc.TreeUtil import TreeUtil
+from foo import TreeNode
+from foo import TreeUtil
 
 
 # Z字打印，关键在于使用了一个栈，以及使用了一个flag表示添加左右子树的顺序

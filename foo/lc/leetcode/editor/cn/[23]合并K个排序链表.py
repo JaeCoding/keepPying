@@ -23,8 +23,8 @@
 #         self.next = None
 from typing import List
 
-from foo.lc.ListNode import ListNode
-from foo.lc.ListUtil import ListUtil
+from foo import ListNode
+from foo import ListUtil
 
 
 class Solution:

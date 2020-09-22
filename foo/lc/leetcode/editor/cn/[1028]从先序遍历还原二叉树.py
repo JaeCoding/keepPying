@@ -63,8 +63,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from foo.lc.TreeNode import TreeNode
-from foo.lc.TreeUtil import TreeUtil
+from foo import TreeNode
 
 
 class Solution:

@@ -13,7 +13,8 @@
 # Output: [1,3,2] 
 # 
 #  Follow up: Recursive solution is trivial, could you do it iteratively? 
-#  Related Topics 栈 树 哈希表
+#  Related Topics 栈 树 哈希表 
+#  👍 705 👎 0
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
@@ -26,32 +27,19 @@
 from typing import List
 
 from foo import TreeNode
-from foo import TreeUtil
 
 
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
 
-        if not root:
-            return []
         result = []
-
-        def recur(node: TreeNode):
+        def recursion(node: TreeNode):
             if not node:
                 return
-            recur(node.left)
+            recursion(node.left)
             result.append(node.val)
-            recur(node.right)
-
-        recur(root)
+            recursion(node.right)
+        recursion(root)
         return result
 
-
-
 # leetcode submit region end(Prohibit modification and deletion)
-
-a = TreeUtil().creat_tree([1, 4, 4, 'null', 2, 2, 'null', 1, 'null', 6, 8, 'null', 'null', 'null', 'null', 1, 3])
-
-b = Solution().inorderTraversal(a)
-
-print(b)

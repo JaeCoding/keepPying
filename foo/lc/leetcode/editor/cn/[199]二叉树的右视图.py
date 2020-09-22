@@ -23,12 +23,11 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-import queue
 from collections import deque
 from typing import List
 
-from foo.lc.TreeNode import TreeNode
-from foo.lc.TreeUtil import TreeUtil
+from foo import TreeNode
+from foo import TreeUtil
 
 
 class Solution:

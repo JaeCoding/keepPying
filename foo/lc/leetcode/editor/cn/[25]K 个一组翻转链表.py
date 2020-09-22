@@ -32,8 +32,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-from foo.lc.ListNode import ListNode
-from foo.lc.ListUtil import ListUtil
+from foo import ListNode
 
 
 class Solution:

@@ -1,7 +1,7 @@
-from foo.lc.ListNode import ListNode
-from foo.lc.ListUtil import ListUtil
-from foo.lc.TreeNode import TreeNode
-from foo.lc.TreeUtil import TreeUtil
+from foo import ListNode
+from foo import ListUtil
+from foo import TreeNode
+from foo import TreeUtil
 
 
 class Solution:

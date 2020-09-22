@@ -25,7 +25,8 @@
 # 
 #  Google: 90% of our engineers use the software you wrote (Homebrew), but you c
 # an’t invert a binary tree on a whiteboard so f*** off. 
-#  Related Topics 树
+#  Related Topics 树 
+#  👍 623 👎 0
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
@@ -36,29 +37,25 @@
 #         self.left = None
 #         self.right = None
 from foo import TreeNode
+from foo import TreeUtil
 
 
 class Solution:
     def invertTree(self, root: TreeNode) -> TreeNode:
 
-        if not root:
-            return root
-
-
-        def dfs(node: TreeNode):
-            if not node.left and not node.right:
-                return
-
-            if node.left:
-                dfs(node.left)
-            if node.right:
-                dfs(node.right)
-            tmp = node.left
+        def invert(node: TreeNode):
+            if not node:
+                return node
+            invert(node.left)
+            invert(node.right)
+            temp = node.left
             node.left = node.right
-            node.right = tmp
-        dfs(root)
-
+            node.right = temp
+        invert(root)
         return root
 
+roo = TreeUtil.creat_tree([4,2,7,1,3,6,9])
+a = Solution().invertTree(roo)
+print(a)
 
 # leetcode submit region end(Prohibit modification and deletion)

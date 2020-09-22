@@ -1,5 +1,5 @@
-# Given a collection of numbers that might contain duplicates, return all possib
-# le unique permutations. 
+# Given a collection of numbers that might contain duplicates,
+# return all possible unique permutations.
 # 
 #  Example: 
 # 
@@ -12,7 +12,8 @@
 #   [2,1,1]
 # ]
 #  
-#  Related Topics 回溯算法
+#  Related Topics 回溯算法 
+#  👍 442 👎 0
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
@@ -22,38 +23,30 @@ from typing import List
 class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
 
-        if not nums:
-            return [[]]
         nums.sort()
         result = []
         out = []
-        contained: set = set()
-
-        def back_trace(position: int):
+        used = []
+        def back_trace(start: int):
             if len(out) == len(nums):
                 result.append(out.copy())
             else:
-
-                for i in range(0, len(nums)):
-                    if i in contained:
+                for i in range(len(nums)):
+                    # ti
+                    if i in used:
                         continue
-                    # same as previous and previous not add, as [1,1,3]
-                    if i > 0 and nums[i] == nums[i-1] and i-1 not in contained:
+                    # if n[i] same with n[i-1] and i > index
+                    if start < i and nums[i] == nums[i-1]:
                         continue
                     out.append(nums[i])
-                    contained.add(i)
+                    used.append(i)
                     back_trace(i)
                     out.pop()
-                    contained.remove(i)
+                    used.pop()
 
         back_trace(0)
-
         return result
 
-
-
-
-# leetcode submit region end(Prohibit modification and deletion)
-
-a = Solution().permuteUnique([1,1,1,2])
+a = Solution().permuteUnique([1,2,1])
 print(a)
+# leetcode submit region end(Prohibit modification and deletion)

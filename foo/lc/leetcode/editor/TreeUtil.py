@@ -1,6 +1,6 @@
 from typing import List
 
-from foo.lc.TreeNode import TreeNode
+from foo.lc.leetcode.editor.TreeNode import TreeNode
 
 
 class TreeUtil:

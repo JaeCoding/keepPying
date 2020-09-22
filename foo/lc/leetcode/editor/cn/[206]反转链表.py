@@ -20,7 +20,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-from foo.lc.ListNode import ListNode
+from foo import ListNode
 
 
 class Solution:

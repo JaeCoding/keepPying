@@ -19,6 +19,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[143]Reorder List.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[143]Reorder List.py" />
+              <option name="questionId" value="143" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[235]Lowest Common Ancestor of a Binary Search Tree.py">
           <value>
             <LeetcodeEditor>
@@ -56,6 +64,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[968]Binary Tree Cameras.py" />
               <option name="questionId" value="1008" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[977]Squares of a Sorted Array.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[977]Squares of a Sorted Array.py" />
+              <option name="questionId" value="1019" />
             </LeetcodeEditor>
           </value>
         </entry>

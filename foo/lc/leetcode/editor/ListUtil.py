@@ -1,6 +1,6 @@
 from typing import List
 
-from foo import ListNode
+from foo.lc.leetcode.editor.ListNode import ListNode
 
 
 class ListUtil:

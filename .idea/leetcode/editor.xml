@@ -27,11 +27,27 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[79]单词搜索.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[79]单词搜索.py" />
+              <option name="questionId" value="79" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[841]钥匙和房间.py">
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[841]钥匙和房间.py" />
               <option name="questionId" value="871" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[845]数组中的最长山脉.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[845]数组中的最长山脉.py" />
+              <option name="questionId" value="875" />
             </LeetcodeEditor>
           </value>
         </entry>

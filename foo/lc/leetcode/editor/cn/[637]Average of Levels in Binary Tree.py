@@ -51,9 +51,9 @@ class Solution:
             node: TreeNode = q.get()
             sum += node.val
             count += 1
-            if not node.left:
+            if node.left:
                 next_q.put(node.left)
-            if not node.right:
+            if node.right:
                 next_q.put(node.right)
 
             if q.empty():

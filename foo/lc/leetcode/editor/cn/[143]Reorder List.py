@@ -46,7 +46,7 @@ class Solution:
         while tail.next:
             out = tail.next
             tail.next = out.next
-            out.next = tail
+            out.next = mid.next
             mid.next = out
 
         # combine the first half and second
@@ -60,8 +60,8 @@ class Solution:
 
         return head
 
-node = ListUtil().creat_tree([1,2,3,4,5])
-node = ListUtil().creat_tree([1])
+node = ListUtil().creat_tree([1,2,3,4,5,6,7])
+node = ListUtil().creat_tree([1,2,3])
 a = Solution().reorderList(node)
 ListUtil().printListNode(a)
 

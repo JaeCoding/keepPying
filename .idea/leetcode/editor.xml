@@ -11,6 +11,22 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[1207]Unique Number of Occurrences.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[1207]Unique Number of Occurrences.py" />
+              <option name="questionId" value="1319" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[1365]How Many Numbers Are Smaller Than the Current Number.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[1365]How Many Numbers Are Smaller Than the Current Number.py" />
+              <option name="questionId" value="1482" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[141]Linked List Cycle.py">
           <value>
             <LeetcodeEditor>
@@ -24,6 +40,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[143]Reorder List.py" />
               <option name="questionId" value="143" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[144]Binary Tree Preorder Traversal.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[144]Binary Tree Preorder Traversal.py" />
+              <option name="questionId" value="144" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -56,6 +80,22 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[617]Merge Two Binary Trees.py" />
               <option name="questionId" value="617" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[763]Partition Labels.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[763]Partition Labels.py" />
+              <option name="questionId" value="768" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[925]Long Pressed Name.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/foo/lc/leetcode/editor/cn/[925]Long Pressed Name.py" />
+              <option name="questionId" value="961" />
             </LeetcodeEditor>
           </value>
         </entry>

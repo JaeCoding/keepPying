@@ -41,6 +41,41 @@
 
 
 # leetcode submit region begin(Prohibit modification and deletion)
+from typing import List
+
+
 class Solution:
     def longestMountain(self, A: List[int]) -> int:
+        longest = 0
+        # 关键 从1开始 与上一个做比较
+        i = 1
+        while i < len(A):
+            # 将计数清零
+            increasing, decreasing = 0, 0
+            # 找到上升阶段最长
+            while i < len(A) and A[i - 1] < A[i]:
+                i += 1
+                increasing += 1
+            # 找到下降阶段最长
+            while i < len(A) and A[i - 1] > A[i]:
+                i += 1
+                decreasing += 1
+            # 计算长度
+            if increasing > 0 and decreasing > 0:
+                longest = max(longest, increasing + decreasing + 1)
+            # 如果i与上个位置相同
+            while i < len(A) and A[i - 1] == A[i]:
+                i += 1
+            # 其他情况则表示清零 循环
+        return longest
+
+# a = Solution().longestMountain([2,1,4,7,3,2,5])
+# a = Solution().longestMountain([2,2,2])
+# a = Solution().longestMountain([875,884,239,731,723,685])
+# a = Solution().longestMountain([0,0,1,0,0,1,1,1,1,1])
+# a = Solution().longestMountain([0,0,0,1,1,0,1,0,1,0,1,0,0,0,1,0,0,1,1,0,1])
+a = Solution().longestMountain([3,2])
+print(a)
+
+
 # leetcode submit region end(Prohibit modification and deletion)

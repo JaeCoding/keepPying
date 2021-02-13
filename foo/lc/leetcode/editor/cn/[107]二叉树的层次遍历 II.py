@@ -3,7 +3,7 @@
 # 
 #  
 # For example: 
-# Given binary tree [3,9,20,'null','null',15,7],
+# Given binary tree [3,9,20,null,null,15,7], 
 #  
 #     3
 #    / \
@@ -31,11 +31,9 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-import queue
 from typing import List
 
-from foo.lc.TreeNode import TreeNode
-from foo.lc.TreeUtil import TreeUtil
+from foo import TreeNode
 
 
 class Solution:
@@ -64,31 +62,5 @@ class Solution:
         helper(root, 0)
 
         return levels
-
-    def levelOrderBottom1(self, root: TreeNode) -> List[List[int]]:
-        if not root:
-            return []
-        result = []
-        this_row = queue.Queue()
-        next_row = queue.Queue()
-        save = []
-        this_row.put(root)
-        while not this_row.empty():
-            node = this_row.get()
-            save.append(node.val)
-            if node.left:
-                next_row.put(node.left)
-            if node.right:
-                next_row.put(node.right)
-            # 到达最后一个位置,更换队列
-            if this_row.empty():
-                result.insert(0, save.copy())
-                this_row = next_row
-                next_row = queue.Queue()
-                save = []
-        return result
-root = TreeUtil.creat_tree([3,9,20,'null','null',15,7])
-a = Solution().levelOrderBottom1(root)
-print(a)
-
+        
 # leetcode submit region end(Prohibit modification and deletion)

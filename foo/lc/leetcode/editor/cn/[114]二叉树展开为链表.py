@@ -37,7 +37,7 @@
 #         self.right = None
 from typing import List
 
-from foo.lc.TreeNode import TreeNode
+from foo import TreeNode
 
 
 class Solution:

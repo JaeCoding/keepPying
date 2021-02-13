@@ -1,7 +1,7 @@
 *.iml
 *.classpath
 *.project
-.idea/
+.idea
 target/
 logs/
 .settings/

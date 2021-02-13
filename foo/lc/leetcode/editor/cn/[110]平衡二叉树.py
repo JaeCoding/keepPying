@@ -47,7 +47,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from foo.lc.TreeNode import TreeNode
+from foo import TreeNode
 
 
 class Solution:

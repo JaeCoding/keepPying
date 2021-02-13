@@ -35,8 +35,8 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-from foo.lc.ListNode import ListNode
-from foo.lc.TreeNode import TreeNode
+from foo import ListNode
+from foo import TreeNode
 
 
 class Solution:

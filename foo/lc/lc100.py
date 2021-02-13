@@ -1,4 +1,5 @@
-from foo.lc.TreeNode import TreeNode
+from foo.lc.leetcode.editor.TreeNode import TreeNode
+
 
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:

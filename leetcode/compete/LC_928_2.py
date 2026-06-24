@@ -1,68 +1,60 @@
 def minMalwareSpread(graph, initial):
-    # 导入必要的库
-    from collections import deque
+    from collections import defaultdict, deque
 
-    def bfs(start, blocked):
-        """使用BFS方法计算从起点开始的感染节点数量，并记录访问过的节点"""
+    def bfs(start, blocked, infected):
+        # 创建队列并将起始节点加入队列
         queue = deque([start])
+        # 创建访问集合并标记起始节点为已访问
         visited = set([start])
-        count = 1  # 起始节点已被感染
+        # 初始化感染计数器
+        count = 0
+        # 广度优先搜索
         while queue:
             node = queue.popleft()
-            for neighbor in range(len(graph)):
-                if graph[node][neighbor] == 1 and neighbor not in visited and neighbor != blocked:
+            # 如果当前节点是感染节点，增加计数器
+            if node in infected:
+                count += 1
+            # 遍历所有邻居节点
+            for neighbor in range(len(graph[node])):
+                # 如果邻居未访问，且与当前节点有连接，且不是被阻塞的节点，则加入队列继续搜索
+                if neighbor not in visited and graph[node][neighbor] == 1 and neighbor != blocked:
                     visited.add(neighbor)
                     queue.append(neighbor)
-                    count += 1
-        return count, visited
+        return count
 
-    # 初始节点按照索引排序
-    initial.sort()
+    # 初始化初始感染节点集合
+    initial_set = set(initial)
+    # 获取图中的节点总数
+    n = len(graph)
+    # 初始化最小感染节点数为无限大
+    min_infected = float('inf')
+    # 初始化最佳节点为-1
+    best_node = -1
 
-    # 计算不移除任何节点时的感染总数
-    total_infected = set()
-    for node in initial:
-        if node not in total_infected:
-            _, infected = bfs(node, -1)
-            total_infected.update(infected)
+    # 对初始感染的每个节点尝试移除，并计算移除后的感染节点数
+    for node in sorted(initial):  # 排序保证优先返回索引最小的节点
+        # 计算移除节点后的感染节点数
+        infected_count = bfs(node, node, initial_set)
+        # 如果当前计算的感染节点数更少，更新最佳节点和最小感染数
+        if infected_count < min_infected:
+            min_infected = infected_count
+            best_node = node
 
-    min_infected = len(total_infected)
-    result = initial[0]
+    return best_node
 
-    # 对每个初始感染节点尝试移除，查看移除后的影响
-    for node in initial:
-        current_infected = 0
-        for other_node in initial:
-            if other_node != node:
-                if other_node not in total_infected:
-                    count, infected = bfs(other_node, node)
-                    total_infected.update(infected)
-                    current_infected += count
-                else:
-                    current_infected += len(bfs(other_node, node)[1])
-
-        # 计算移除当前节点后的感染数
-        if current_infected < min_infected:
-            min_infected = current_infected
-            result = node
-
-    return result
-
-
-# 示例输入和输出
+# 测试示例
 graph1 = [[1, 1, 0], [1, 1, 0], [0, 0, 1]]
 initial1 = [0, 1]
-output1 = minMalwareSpread(graph1, initial1)
-assert output1 == 0, f"Expected 0 but got {output1}"
+result1 = minMalwareSpread(graph1, initial1)
 
 graph2 = [[1, 1, 0], [1, 1, 1], [0, 1, 1]]
 initial2 = [0, 1]
-output2 = minMalwareSpread(graph2, initial2)
-assert output2 == 1, f"Expected 1 but got {output2}"
+result2 = minMalwareSpread(graph2, initial2)
 
 graph3 = [[1, 1, 0, 0], [1, 1, 1, 0], [0, 1, 1, 1], [0, 0, 1, 1]]
 initial3 = [0, 1]
-output3 = minMalwareSpread(graph3, initial3)
-assert output3 == 1, f"Expected 1 but got {output3}"
+result3 = minMalwareSpread(graph3, initial3)
 
-output1, output2, output3
+print(result1)
+print(result2)
+print(result3)
